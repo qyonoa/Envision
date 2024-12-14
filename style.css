@@ -104,7 +104,7 @@ CSS STRUCTURE:
 
 /* Theme Colors */
 :root {
-  --accent-color: #fdc50e;
+  --accent-color: #f3892b;
   --kakaoBrown-color: #3A1D1D;
   --dark-color: #2f2f2f;
   --grey-color: #f8f4f2;
@@ -413,6 +413,11 @@ ol li {
 
 ul li.active a {
   color: #daa556;
+}
+
+ul i {
+  font-size: 20px;
+  margin-right: 8px;
 }
 
 ul li:last-child,
@@ -775,7 +780,7 @@ label>.label-body {
 /* 2.4 Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside;
+  list-style: none;
 }
 
 ol {
@@ -1215,14 +1220,14 @@ fieldset[disabled] a.btn {
   overflow: hidden;
 }
 
-.image-hvr-effect img.post-image {
+.image-hvr-effect card.post-image {
   transform: scale(1.1);
   will-change: transform;
   transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   z-index: 0;
 }
 
-.image-hvr-effect:hover img.post-image {
+.image-hvr-effect:hover card.post-image {
   transform: scale(1);
 }
 
@@ -2029,7 +2034,14 @@ body.nav-active .nav__block .nav__block-item {
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  margin-top: 300px;
+  margin-top: 200px;
+}
+
+.main-slider .banner-content img {
+  position: relative;
+  margin: auto;
+  width: 200px;
+
 }
 
 .main-slider .banner-content h2.banner-title {
@@ -2198,6 +2210,7 @@ body.nav-active .nav__block .nav__block-item {
   font-weight: 900;
 }
 
+
 .section-header .title span {
   font-size: 14px;
   color: #afafaf;
@@ -2209,11 +2222,11 @@ body.nav-active .nav__block .nav__block-item {
 
 .section-header span:before {
   content: "";
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 3px solid var(--accent-color);
   position: absolute;
-  top: 9px;
+  top: 5px;
   left: 3px;
-  width: 14px;
+  width: 20px;
   align-items: center;
 }
 
@@ -2342,74 +2355,118 @@ body.nav-active .nav__block .nav__block-item {
   }
 }
 
-/*----- Services Section
---------------------------------------------------------------*/
-.services-item {
-  position: relative;
-  margin-top: 60px;
-  margin-right: 100px;
-}
 
-.services-item:last-child {
-  margin-right: 0;
-}
-
-.services-item .number {
+.service-item .number {
   font-family: var(--heading-font);
-  font-size: 5em;
+  font-size: 3.5em;
   font-weight: 900;
-  color: #ff7700;
-  position: absolute;
-  top: -69px;
-  left: -22px;
-  z-index: -1;
+  color: var(--bs-dark-color);
+  position: relative;
+  top: -20px;
+  left: -12px;
 }
 
-.services-item p {
+.service-item:hover .number {
+  font-family: var(--heading-font);
+  font-size: 3.5em;
+  font-weight: 900;
+  color: var(--accent-color);
+  position: relative;
+  top: -20px;
+  left: -12px;
+}
+
+.service-item:hover i {
+  color: #ffffff;
+}
+.service-item:hover li>i {
+  color: var(--accent-color);
+
+}
+
+.service-item p {
   line-height: 2;
 }
 
 @media only screen and (max-width: 1199px) {
-  .services-item {
+  .service-item {
     margin-right: 50px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .services-item {
+  .service-item {
     margin-bottom: 50px;
   }
 
-  .services-item:last-child {
+  .service-item:last-child {
     margin-right: 50px;
   }
 }
 
-/*----- Subscribe Section
+
+/*--------------------------------------------------------------
+# Services Section
 --------------------------------------------------------------*/
-#subscribe figure.subscribe-image {
-  margin-bottom: 60px;
-  margin-right: 30px;
+.services .service-item {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 20px;
+  border-bottom: 7px solid rgba(255, 255, 255, 0.5);;
+  height: 29%;
+  margin-bottom: 20px;
 }
 
-.subscribe-content input[type="text"] {
-  width: 100%;
-  height: 65px;
-  border: 1px solid #dfdfdf;
-  padding-left: 20px;
+.services .service-item .icon {
+  background: white;
+  color: var(--accent-color);
+  border-color: #2bcaae;
+
+  margin-top: 30px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+
+.services .service-item:hover .icon {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+
+.services .service-item h3 {
+  font-weight: 700;
+  margin: 20px 0 15px 0;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
   margin-bottom: 0;
-  text-transform: capitalize;
 }
 
-.subscribe-content button.btn-subscribe {
-  width: 100%;
-}
+@media (min-width: 1365px) {
+  .services .service-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+  }
 
-@media only screen and (max-width: 800px) {
-  #subscribe .subscribe-content {
-    width: 90%;
+  .services .service-item:hover h3 {
+    color: var(--accent-color);
   }
 }
+
 
 
 /*--------------------------------------------------------------
@@ -2505,60 +2562,6 @@ footer#footer {
   }
 }
 
-
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
-.services .service-item {
-  background-color: var(--surface-color);
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
-  padding: 10px 30px;
-  transition: all ease-in-out 0.3s;
-  border-radius: 18px;
-  border-bottom: 10px solid var(--bs-light);
-  height: 29%;
-  margin-bottom: 20px;
-}
-
-.services .service-item .icon {
-  color: white;
-  background: var(--accent-color);
-
-  margin-top: 30px;
-  width: 64px;
-  height: 64px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-size: 28px;
-  transition: ease-in-out 0.3s;
-}
-
-.services .service-item h3 {
-  font-weight: 700;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
-  transition: ease-in-out 0.3s;
-}
-
-.services .service-item p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-@media (min-width: 1365px) {
-  .services .service-item:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent-color);
-  }
-
-  .services .service-item:hover h3 {
-    color: var(--accent-color);
-  }
-}
 
 
 /*--------------------------------------------------------------
