@@ -2330,6 +2330,7 @@ body.nav-active .nav__block .nav__block-item {
   background: var(--grey-color);
 }
 
+
 .content-light a,
 .content-light {
   color: #fff;
@@ -2468,6 +2469,47 @@ body.nav-active .nav__block .nav__block-item {
 }
 
 
+/* ==========================================================================Portfolio========================================================================== */
+
+
+/* 갤러리 컨테이너 */
+.gallery {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px; /* 이미지 간의 간격 */
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* 개별 이미지 링크 */
+.gallery a {
+  flex-basis: calc(48.5%); /* 3열로 구성 */
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+
+.gallery a:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+
+/* 이미지 스타일 */
+.gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* 최대 높이 강제 */ 
+  display: block;
+  object-fit: cover;
+}
+
+
+/* ==========================================================================Portfolio End========================================================================== */
+
 
 /*--------------------------------------------------------------
 /** 4.4 Footer
@@ -2476,9 +2518,7 @@ footer#footer {
   margin-top: 100px;
 }
 
-#footer img.footer-logo {
-  margin-bottom: 30px;
-}
+
 
 .footer-menu {
   margin-right: 15px;
@@ -2552,6 +2592,11 @@ footer#footer {
   border-top: 1px solid #efefef;
   padding-top: 30px;
   margin-top: 80px;
+}
+
+#footer-bottom img.logo {
+  width: 50px;
+
 }
 
 @media only screen and (max-width: 800px) {
