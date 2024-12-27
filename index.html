@@ -25,6 +25,7 @@
 		rel="stylesheet">
 	<link href="images/favicon.png" rel="icon">
 	<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" type="text/css">
 
 
@@ -34,12 +35,136 @@
 </head>
 
 <body>
+	<div class="nav nav-overlay">
+		<div class="nav__content">
+			<div class="container">
+				<div class="row p-4 p-md-0 flex-column-reverse flex-md-row g-md-5 nav__block">
+					<div class="col-md-5">
+						<ul class="nav__list d-none d-md-block">
+							<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a>
+							</li>
+							<li class="nav__list-item"><a href="index.html" class="hover-target">Onepage</a></li>
+							<li class="nav__list-item"><a href="index.html" class="hover-target">Styles</a></li>
+							<li class="nav__list-item"><a href="index.html" class="hover-target">Blog</a></li>
+							<li class="nav__list-item"><a href="single-post.html" class="hover-target">Single Post</a>
+							</li>
+							<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact us</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 text-white">
+						<h3 class="text-white fw-bold nav__block-item">Contact info</h3>
+						<p class="text-light nav__block-item">Officia nisi corrupti eaque cumque exercitationem labore
+							sint sapiente rem neque temporibus id ratione perspiciatis, tenetur est repellendus
+							aspernatur culpa repudiandae omnis.</p>
+						<ul class="list-unstyled text-light nav__block-item">
+							<li class="menu-item">
+								<i class="icon icon-location me-2"></i>2489 Locust Court, Los Angeles
+							</li>
+							<li class="menu-item">
+								<i class="icon icon-location2 me-2"></i>3927 Red Maple Drive, Los Angeles
+							</li>
+							<li class="menu-item">
+								<i class="icon icon-phone me-2"></i>+63 667 341 3463
+							</li>
+							<li class="menu-item">
+								<i class="icon icon-envelope-o me-2"></i><a href="#"
+									class="text-white">contact@example.com</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 text-white">
+						<h3 class="text-white fw-bold nav__block-item">Pages</h3>
+						<ul class="list-unstyled nav__block-item">
+							<li><a href="index.html" class="text-white">Onepage </a></li>
+							<li><a href="index.html" class="text-white">Styles </a></li>
+							<li><a href="index.html" class="text-white">Blog </a></li>
+							<li><a href="index.html" class="text-white">Single Post </a></li>
+							<li><a href="index.html" class="text-white">Contact us </a></li>
+							<li><a href="index.html" class="text-white">Portfolio Masonry </a></li>
+							<li><a href="index.html" class="text-white">Portfolio Grid </a></li>
+							<li><a href="index.html" class="text-white">Portfolio Grid </a></li>
+							<li><a href="index.html" class="text-white">Portfolio Grid </a></li>
+							<li><a href="index.html" class="text-white">Single Portfolio </a></li>
+							<li><a href="index.html" class="text-white">About Us </a></li>
+							<li><a href="index.html" class="text-white">Our Team </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="side-nav-bar">
+		<input id="menu-toggle" type="checkbox" />
+		<label class="menu-btn" for="menu-toggle">
+			<span></span>
+		</label>
+	</div>
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+				<div class="col-lg-2">
+					<div class="header__logo">
+
+						<a href='index.html'><img src="images/logo/logo+symbol.webp" alt=""></a>
+
+					</div>
+				</div>
+                <div class="col-lg-8">
+                    <div class="header__nav__option">
+
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="intro active"><a href="index.html">Home</a></li>
+                                <li class='about'><a class='active' href="#about">About</a></li>
+                                <li class="portfolio"><a href='#portfolio'>Portfolio</a>
+                                    <ul class="dropdown">
+                                        <li><a href='/portfolio_architecture'>Featured</a></li>
+                                        <li><a href='/portfolio_environment'>Scene</a></li>
+                                        <li><a href='/portfolio_character'>Asset</a></li>
+                                    </ul>
+                                </li>
+								<li class='class'><a href="#class">Class</a>
+									<ul class="dropdown">
+										<li><a href='/portfolio_architecture'>기초 모델링</a></li>
+										<li><a href='/portfolio_environment'>심화 모델링</a></li>
+										<li><a href='/portfolio_character'>포트폴리오</a></li>
+									</ul>
+								</li>
+
+                                <li><a href='#subscribe'>Contact</a></li>
+                            </ul>
+
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+
+
+
+                        </div>
+						
+					</div>
+				</div>
+
+
+				<div class="col-lg-2">
+
+						<a href="https://open.kakao.com/o/sLjkGvXg" class="btn btn-accent btn-xlarge btn-rounded">상담하기</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
 
 	<div class="preloader"></div>
 	<section id="intro" class="scrollspy-section">
 		<div class="main-slider">
 			<div class="slider-item jarallax" data-speed="0.2">
-				<img src="images/portfolio/3.webp" alt="banner" class="jarallax-img">
+				<img src="images/UI/hero_1.webp" alt="banner" class="jarallax-img">
 				<div class="banner-content">
 					<img src="images/Envision_symbol.png" alt="banner" class="jarallax-img">
 					<h2 class="banner-title txt-fx">Envision</h2>
@@ -83,8 +208,8 @@
 	</section>
 
 	
-    <!-- Services Section -->
-	<section id="services" class="services scrollspy-section padding-medium">
+    <!-- about Section -->
+	<section id="about" class="about scrollspy-section padding-medium">
  
 		<div class="container">
 			<div class="container">
@@ -157,7 +282,7 @@
 		</div>
 	</section>
 
-	<section id="services" class="services scrollspy-section bg-envision padding-medium">
+	<section id="about" class="about scrollspy-section bg-envision padding-medium">
 
 		<div class="container">
 			<div class="row">
@@ -275,61 +400,54 @@
 			<div class="row">
 
 				<div id="filters" class="button-group d-flex flex-wrap gap-4 py-5" data-aos="fade-up">
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase is-checked"
-						data-filter=".design">Featured</a>
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
-						data-filter=".interior">Asset</a>
-					<a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
-						data-filter=".landscape">Scene</a>
+					<a class="btn-checked btn rounded-pill text-uppercase ">Featured</a>
+					<a href="index_scene.html#portfolio" class="btn btn-outline-light rounded-pill text-uppercase">Scene</a>
+					<a href="index_asset.html#portfolio" class="btn btn-outline-light rounded-pill text-uppercase">Asset</a>
+
 				</div>
 
 			</div>
 
 			<div class="gallery">
-				
-				<a href="images/portfolio/1.webp" class="image-popup branding">
-					<img src="images/portfolio/1.webp" loading="lazy" alt="">
+				<a href="images/portfolio/featured/10.webp" class="image-popup branding">
+					<img src="images/portfolio/featured/10.webp" loading="lazy" alt="">
 				</a>
-				<a href="images/portfolio/2.webp" class="image-popup branding">
-					<img src="images/portfolio/2.webp" loading="lazy" alt="">
+				<a href="images/portfolio/featured/9.webp" class="image-popup branding">
+					<img src="images/portfolio/featured/9.webp" loading="lazy" alt="">
 				</a>
-				<a href="images/portfolio/3.webp" class="image-popup branding">
-					<img src="images/portfolio/3.webp" loading="lazy" alt="">
+				<a href="images/portfolio/featured/8.webp" class="image-popup branding">
+					<img src="images/portfolio/featured/8.webp" loading="lazy" alt="">
 				</a>
-				<a href="images/portfolio/4.webp" class="image-popup branding">
-					<img src="images/portfolio/4.webp" loading="lazy" alt="">
+				<a href="images/portfolio/featured/7.webp" class="image-popup branding">
+					<img src="images/portfolio/featured/7.webp" loading="lazy" alt="">
 				</a>
-				<a href="images/portfolio/5.webp" class="image-popup branding">
-					<img src="images/portfolio/5.webp" loading="lazy" alt="">
+				<a href="images/portfolio/featured/6.webp" class="image-popup branding">
+					<img src="images/portfolio/featured/6.webp" loading="lazy" alt="">
 				</a>
-				<a href="images/portfolio/6.webp" class="image-popup branding">
-					<img src="images/portfolio/6.webp" loading="lazy" alt="">
+				<a href="images/portfolio/featured/5.webp" class="image-popup branding">
+					<img src="images/portfolio/featured/5.webp" loading="lazy" alt="">
 				</a>
-				<a href="images/portfolio/7.webp" class="image-popup branding">
-					<img src="images/portfolio/7.webp" loading="lazy" alt="">
+				<a href="images/portfolio/featured/4.webp" class="image-popup branding">
+					<img src="images/portfolio/featured/4.webp" loading="lazy" alt="">
 				</a>
-				<a href="images/portfolio/8.webp" class="image-popup branding">
-					<img src="images/portfolio/8.webp" loading="lazy" alt="">
+				<a href="images/portfolio/featured/3.webp" class="image-popup branding">
+					<img src="images/portfolio/featured/3.webp" loading="lazy" alt="">
 				</a>
-				<a href="images/portfolio/9.webp" class="image-popup branding">
-					<img src="images/portfolio/9.webp" loading="lazy" alt="">
+				<a href="images/portfolio/featured/2.webp" class="image-popup branding">
+					<img src="images/portfolio/featured/2.webp" loading="lazy" alt="">
 				</a>
-				<a href="images/portfolio/asset/1.webp" class="image-popup branding">
-					<img src="images/portfolio/asset/1.webp" loading="lazy" alt="">
-				</a>
-				<a href="images/portfolio/asset/2.webp" class="image-popup branding">
-					<img src="images/portfolio/asset/2.webp" loading="lazy" alt="">
+				<a href="images/portfolio/featured/1.webp" class="image-popup branding">
+					<img src="images/portfolio/featured/1.webp" loading="lazy" alt="">
 				</a>
 			</div>
 	
 
 
-		</div>
 	</section>
 
 
-    <!-- Why Us Section -->
-    <section id="why-us" class="why-us section scrollspy-section bg-grey padding-large">
+    <!-- Class Section -->
+    <section id="class" class="class section scrollspy-section bg-grey padding-large">
   
 		<div class="container">
 			
@@ -343,18 +461,17 @@
 
 				</div>
 			</div>
-			<a href="class_basic.html" class="image-hvr-effect">
 		  <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
   
 			<div class="col-md-4">
+				
 			  <div class="card">
+
 				<div class="img">
-					<a href="class_basic.html" class="image-hvr-effect">
-						<img src="images/UI/class_1.webp" alt="post" class="post-image">
-					</a>
+					<img src="images/UI/class_1.webp" alt="post" class="post-image">
 					<div class="icon"><i class="bi bi-bounding-box"></i></div>
 				</div>
-				<h2 class="title"><a href="#" class="stretched-link">기초 모델링</a></h2>
+				<h2 class="title"><a href="class_basic.html" class="stretched-link">기초 모델링</a></h2>
 				<p>3D 그래픽을 처음 배우는 분들을 위한 입문 과정으로 실무에서 사용하는 소프트웨어의 사용법을 배우고
 					기본 기술을 익히며 창작의 재미를 느끼고 자신감을 쌓을 수 있습니다.</p>
 
@@ -378,7 +495,7 @@
 				<p>수강 대상: 3D 작품을 제작한 경험이 있으신 분</p>
 			  </div>
 			</div><!-- End Card Item -->
-			</a>
+			
   
 			<div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
 			  <div class="card">
@@ -410,7 +527,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<figure class="subscribe-image">
-						<img src="images/kakao-talk.png" alt="subscribe">
+						<img src="images/UI/kakao-talk.png" alt="subscribe">
 					</figure>
 				</div>
 				<div class="col-md-6">
@@ -448,6 +565,12 @@
 			</div>
 		</div>
 	</div>
+
+	
+	<!-- Scroll Top -->
+	<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
 
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/ui-easing.js"></script>

@@ -54,7 +54,7 @@ CSS STRUCTURE:
     - Content colors
   4.4 Homepage section
     - About us
-    - Services
+    - about
     - Subscribe
   4.4 Footer
 
@@ -700,7 +700,7 @@ abbr {
 
 /*------------------------------------------------
 /* 2.3 Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -778,7 +778,7 @@ label>.label-body {
 
 /*------------------------------------------------
 /* 2.4 Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 ul {
   list-style: none;
 }
@@ -807,7 +807,7 @@ li {
 
 /*------------------------------------------------
 /* 2.5 Code
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -826,7 +826,7 @@ pre>code {
 
 /*------------------------------------------------
 /* 2.6 Tables
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 th,
 td {
   padding: 12px 15px;
@@ -846,7 +846,7 @@ td:last-child {
 
 /*------------------------------------------------
 /* 2.7 Spacing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 button,
 .button {
   margin-bottom: 1rem;
@@ -873,7 +873,7 @@ form {
 
 /*------------------------------------------------
 /* 2.8 Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 .u-full-width {
   width: 100%;
   box-sizing: border-box;
@@ -906,7 +906,7 @@ form {
 
 /*------------------------------------------------
 /* 2.9 Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -1079,10 +1079,17 @@ fieldset[disabled] a.btn {
 }
 
 .btn.btn-outline-light:hover {
-  background: rgba(255, 255, 255, .045);
   background: #fff;
-  border-color: #fff;
-  color: #121212;
+  border-color: var(--accent-color);
+  color: var(--accent-color) !important;
+}
+
+.btn-checked {
+  background: var(--accent-color);
+}
+.btn-checked:hover {
+  background: var(--accent-color);
+  color: white;
 }
 
 .btn.btn-outline-accent {
@@ -1102,10 +1109,8 @@ fieldset[disabled] a.btn {
   color: #f4ebf2;
 }
 
-.btn.btn-outline-light:hover {
-  border-color: var(--accent-color);
-  color: var(--accent-color) !important;
-}
+
+
 
 .btn.btn-full {
   display: block;
@@ -1163,8 +1168,10 @@ fieldset[disabled] a.btn {
 }
 
 .btn.btn-accent:hover {
-  color: #ffffff !important;
-  background-color: #121212;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--accent-color) inset;
+  color: var(--accent-color) !important;
+  background-color: #ffffff;
 }
 
 .btn.btn-gray,
@@ -1352,6 +1359,165 @@ This is main CSS file that contains custom style rules used in this template
   z-index: 9999;
 }
 
+/*---------------------
+  Header
+-----------------------*/
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  line-height: 1.4;
+  background: linear-gradient(to bottom, rgba(41, 37, 33, 1), rgba(41, 37, 33, 0.7), rgba(41, 37, 33, 0));
+  backdrop-filter: blur(1px);
+  z-index: 9;
+}
+
+.header__logo {
+  padding: 20px 0;
+
+}
+.header__logo a {
+  width: 200px;
+  display: inline-block;
+}
+
+ 
+.header__nav__option {
+  text-align: center;
+  padding: 28px 0px;
+}
+
+
+
+.header__nav__menu {
+  display: inline-block;
+  margin-right: 45px;
+}
+.header__nav__menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 45px;
+  position: relative;
+}
+.header__nav__menu ul li.active a:after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.header__nav__menu ul li:hover a:after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.header__nav__menu ul li:hover .dropdown {
+  top: 10px;
+  opacity: 1;
+  visibility: visible;
+
+}
+.header__nav__menu ul li:last-child {
+  margin-right: 0;
+}
+.header__nav__menu ul li .dropdown {
+  position: absolute;
+  left: -50px;
+  top: 60px;
+  width: 140px;
+  background: #ffffffc0;
+  text-align: left;
+  padding: 2px 0;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+.header__nav__menu ul li .dropdown li {
+  display: block;
+  margin-right: 0;
+}
+.header__nav__menu ul li .dropdown li a {
+  font-size: 14px;
+  color: #111111;
+  padding: 8px 20px;
+  text-transform: capitalize;
+}
+
+.header__nav__menu ul li .dropdown li a:hover {
+  color: var(--accent-color)
+}
+.header__nav__menu ul li .dropdown li a:after {
+  display: none;
+}
+.header__nav__menu ul li a {
+  font-size: 15px;
+  font-family: "Play", sans-serif;
+  color: #ffffff;
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  padding: 6px 0;
+}
+.header__nav__menu ul li a:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-color);
+  content: "";
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+
+.header__nav__menu ul a.active a:after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.header__nav__social {
+  display: inline-block;
+  position: relative;
+  padding-left: 50px;
+}
+
+.header__nav__social a:hover {
+  color: var(--accent-color);
+}
+.header__nav__social a.checked {
+  color: var(--accent-color);
+}
+.header__nav__social:before {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  height: 13px;
+  width: 1px;
+  background: rgba(225, 225, 225, 0.2);
+  content: "";
+}
+.header__nav__social a {
+  color: #ffffff;
+  font-size: 15px;
+  margin: 3px;
+}
+.header__nav__social a:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    display: none;
+  }
+}
+
 /* 4.1 Header
 ------------------------------------------------------------- */
 /* Logo
@@ -1450,6 +1616,8 @@ nav#navbar ul.menu-list {
   transition: 0.5s all ease-out;
 }
 
+
+
 /* Dropdown menu 
 --------------------------------------------------------------*/
 #navbar ul.dropdown-menu {
@@ -1469,7 +1637,7 @@ nav#navbar ul.menu-list {
 }
 
 #navbar ul.dropdown-menu li a {
-  padding: 12px 20px;
+  padding: 12px 200px;
   line-height: 1.5em;
 }
 
@@ -1480,6 +1648,8 @@ nav#navbar ul.menu-list {
 #navbar ul.menu-list a:hover {
   color: var(--accent-color);
 }
+
+
 
 /* Sticky Header
 --------------------------------------------------------------*/
@@ -1660,13 +1830,18 @@ header.sticky #navbar ul.menu-list>li>a {
 
 .side-nav-bar .menu-btn {
   position: absolute;
-  top: 0;
-  display: flex;
+  top: 5 px;
+  display: none;
   align-items: center;
-  width: 20px;
-  height: 26px;
+  width: 50px;
   cursor: pointer;
   transition: 0.5s all ease-out;
+  
+}
+@media screen and (max-width: 991px) {
+  .side-nav-bar .menu-btn{
+    display:flex; 
+    }
 }
 
 .onepage-menu .menu-btn>span,
@@ -2034,7 +2209,7 @@ body.nav-active .nav__block .nav__block-item {
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 400px;
 }
 
 .main-slider .banner-content img {
@@ -2082,7 +2257,7 @@ body.nav-active .nav__block .nav__block-item {
   }
 
   .main-slider .banner-content {
-    margin-top: 200px;
+    margin-top: 400px;
   }
 }
 
@@ -2094,7 +2269,7 @@ body.nav-active .nav__block .nav__block-item {
 
 @media only screen and (max-width: 1199px) {
   .main-slider .banner-content {
-    margin-top: 150px;
+    margin-top: 350px;
   }
 
   .main-slider .banner-content h2.banner-title {
@@ -2104,7 +2279,7 @@ body.nav-active .nav__block .nav__block-item {
 
 @media only screen and (max-width: 999px) {
   .main-slider .banner-content {
-    margin-top: 100px;
+    margin-top: 300px;
   }
 
   .main-slider .banner-content h2.banner-title {
@@ -2130,7 +2305,7 @@ body.nav-active .nav__block .nav__block-item {
 
 @media only screen and (max-width: 580px) {
   .main-slider .banner-content {
-    margin-top: 180px;
+    margin-top: 50px;
   }
 
   .main-slider .banner-content {
@@ -2321,7 +2496,7 @@ body.nav-active .nav__block .nav__block-item {
   background-image: url('images/About_background.png');
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: bottom right; /* 이미지 위치 중앙 정렬 */
+  background-position: bottom right; /* ì´ë¯¸ì§€ ìœ„ì¹˜ ì¤‘ì•™ ì •ë ¬ */
 
 
 }
@@ -2407,9 +2582,9 @@ body.nav-active .nav__block .nav__block-item {
 
 
 /*--------------------------------------------------------------
-# Services Section
+# about Section
 --------------------------------------------------------------*/
-.services .service-item {
+.about .service-item {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
   padding: 10px 30px;
@@ -2420,7 +2595,7 @@ body.nav-active .nav__block .nav__block-item {
   margin-bottom: 20px;
 }
 
-.services .service-item .icon {
+.about .service-item .icon {
   background: white;
   color: var(--accent-color);
   border-color: #2bcaae;
@@ -2438,32 +2613,32 @@ body.nav-active .nav__block .nav__block-item {
 }
 
 
-.services .service-item:hover .icon {
+.about .service-item:hover .icon {
   background-color: var(--accent-color);
   color: white;
 }
 
 
-.services .service-item h3 {
+.about .service-item h3 {
   font-weight: 700;
   margin: 20px 0 15px 0;
   font-size: 22px;
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item p {
+.about .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
 @media (min-width: 1365px) {
-  .services .service-item:hover {
+  .about .service-item:hover {
     transform: translateY(-10px);
     border-color: var(--accent-color);
   }
 
-  .services .service-item:hover h3 {
+  .about .service-item:hover h3 {
     color: var(--accent-color);
   }
 }
@@ -2472,19 +2647,19 @@ body.nav-active .nav__block .nav__block-item {
 /* ==========================================================================Portfolio========================================================================== */
 
 
-/* 갤러리 컨테이너 */
+/* ê°¤ëŸ¬ë¦¬ ì»¨í…Œì´ë„ˆ */
 .gallery {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  gap: 10px; /* 이미지 간의 간격 */
+  gap: 10px; /* ì´ë¯¸ì§€ ê°„ì˜ ê°„ê²© */
   justify-content: center;
   margin: 0 auto;
 }
 
-/* 개별 이미지 링크 */
+/* ê°œë³„ ì´ë¯¸ì§€ ë§í¬ */
 .gallery a {
-  flex-basis: calc(48.5%); /* 3열로 구성 */
+  flex-basis: calc(48.5%); /* 3ì—´ë¡œ êµ¬ì„± */
   overflow: hidden;
   border-radius: 20px;
   transition: transform 0.3s ease;
@@ -2498,18 +2673,50 @@ body.nav-active .nav__block .nav__block-item {
 }
 
 
-/* 이미지 스타일 */
+/* ì´ë¯¸ì§€ ìŠ¤íƒ€ì¼ */
 .gallery img {
   width: 100%;
   height: auto;
-  max-height: 200px; /* 최대 높이 강제 */ 
+  max-height: 200px; /* ìµœëŒ€ ë†’ì´ ê°•ì œ */ 
   display: block;
   object-fit: cover;
 }
 
 
 /* ==========================================================================Portfolio End========================================================================== */
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 105px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
 
+.scroll-top i {
+  font-size: 24px;
+  color: white;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
 
 /*--------------------------------------------------------------
 /** 4.4 Footer
@@ -2612,7 +2819,7 @@ footer#footer {
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
-.why-us .card {
+.class .card {
   background-color: var(--surface-color);
   color: var(--default-color);
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
@@ -2623,14 +2830,14 @@ footer#footer {
   position: relative;
 }
 
-.why-us .card .img {
+.class .card .img {
   position: relative;
   padding: 10px;
   border-radius: 20%;
 
 }
 
-.why-us .card .icon {
+.class .card .icon {
   color: var(--accent-color);
   background-color: color-mix(in srgb, var(--accent-color), white 92%);
   border: 4px solid var(--background-color);
@@ -2649,12 +2856,12 @@ footer#footer {
   transition: 0.3s;
 }
 
-.why-us .card:hover .icon {
+.class .card:hover .icon {
   background-color: var(--accent-color);
   color: white;
 }
 
-.why-us .card h2 {
+.class .card h2 {
   text-align: center;
   font-weight: 700;
   font-size: 24px;
@@ -2662,15 +2869,15 @@ footer#footer {
   margin: 50px 0 12px 0;
 }
 
-.why-us .card h2 a {
+.class .card h2 a {
   color: var(--heading-color);
 }
 
-.why-us .card h2 a:hover {
+.class .card h2 a:hover {
   color: var(--accent-color);
 }
 
-.why-us .card p {
+.class .card p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;

@@ -222,4 +222,63 @@
 		initIsotope();
 	});
 
+  /*------------------
+		Navigation
+	--------------------*/
+
+    // 스크롤 시 현재 위치에 따라 네비게이션 버튼 활성화 업데이트
+    $(window).on('scroll', function() {
+      const scrollPosition = $(this).scrollTop();
+
+      $('section').each(function() {
+          const sectionTop = $(this).offset().top - 100; // 오차 보정
+          const sectionBottom = sectionTop + $(this).outerHeight();
+
+          // 스크롤 위치가 섹션 안에 있으면 해당 섹션의 네비게이션 버튼 활성화
+          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+              const currentSection = $(this).attr('id');
+              setTimeout(() => {
+                  console.log(currentSection)
+                  $('nav li').removeClass('active');
+                  $('nav li.'+currentSection).addClass('active');
+              }, 10);
+          }
+      });
+  });
+
+    /**
+   * Scroll top button
+   */
+    let scrollTop = document.querySelector('.scroll-top');
+
+    function toggleScrollTop() {
+      if (scrollTop) {
+        window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      }
+    }
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  
+    window.addEventListener('load', toggleScrollTop);
+    document.addEventListener('scroll', toggleScrollTop);
+  
+    /**
+     * Animation on scroll function and init
+     */
+    function aosInit() {
+      AOS.init({
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+    }
+    window.addEventListener('load', aosInit);
+
+
 })(jQuery);
