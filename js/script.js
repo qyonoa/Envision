@@ -94,12 +94,10 @@
 
     $('.main-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
       hideTexts();
-      console.log('beforeChange');
     });
 
     $('.main-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
       animateTexts();
-      console.log('afterChange');
     });
     
     initTexts();
@@ -198,6 +196,7 @@
         loop: true,
     })
   }
+  
 
   $(document).ready(function(){
 
@@ -238,7 +237,6 @@
           if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
               const currentSection = $(this).attr('id');
               setTimeout(() => {
-                  console.log(currentSection)
                   $('nav li').removeClass('active');
                   $('nav li.'+currentSection).addClass('active');
               }, 10);
@@ -267,18 +265,5 @@
     window.addEventListener('load', toggleScrollTop);
     document.addEventListener('scroll', toggleScrollTop);
   
-    /**
-     * Animation on scroll function and init
-     */
-    function aosInit() {
-      AOS.init({
-        duration: 600,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-      });
-    }
-    window.addEventListener('load', aosInit);
-
 
 })(jQuery);

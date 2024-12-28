@@ -23,7 +23,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet">
-	<link href="images/favicon.png" rel="icon">
+	<link href="images/logo/favicon.png" rel="icon">
 	<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" type="text/css">
@@ -35,6 +35,7 @@
 </head>
 
 <body>
+
 	<div class="nav nav-overlay">
 		<div class="nav__content">
 			<div class="container">
@@ -94,79 +95,75 @@
 
 		</div>
 	</div>
-	
+
 	<div class="side-nav-bar">
 		<input id="menu-toggle" type="checkbox" />
 		<label class="menu-btn" for="menu-toggle">
 			<span></span>
 		</label>
 	</div>
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-				<div class="col-lg-2">
-					<div class="header__logo">
+	<!-- Header Section Begin -->
+	<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2">
+				<div class="header__logo">
 
-						<a href='index.html'><img src="images/logo/logo+symbol.webp" alt=""></a>
+					<a href='index.html'><img src="images/logo/logo+symbol.webp" alt=""></a>
+
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="header__nav__option">
+
+					<nav class="header__nav__menu mobile-menu">
+						<ul>
+							<li class="intro active"><a href="#intro">Home</a></li>
+							<li class='about'><a class='active' href="#about">About</a></li>
+							<li class="portfolio"><a href='#portfolio'>Portfolio</a>
+								<ul class="dropdown">
+									<li><a href='index.html#portfolio'>Featured</a></li>
+									<li><a href='index_scene.html#portfolio'>Scene</a></li>
+									<li><a href='index_asset.html#portfolio'>Asset</a></li>
+								</ul>
+							</li>
+							<li class='class'><a href="#class">Class</a>
+								<ul class="dropdown">
+									<li><a href='class_basic.html'>기초 모델링</a></li>
+									<li><a href='class_advance.html'>심화 모델링</a></li>
+									<li><a href='class_portfolio.html'>포트폴리오</a></li>
+								</ul>
+							</li>
+
+							<li><a href='#subscribe'>Contact</a></li>
+						</ul>
+
+					</nav>
+					<div class="header__nav__social">
+						<a href="#"><i class="bi bi-facebook"></i></a>
+						<a href="#"><i class="bi bi-instagram"></i></a>
+						<a href="#"><i class="bi bi-youtube"></i></a>
 
 					</div>
 				</div>
-                <div class="col-lg-8">
-                    <div class="header__nav__option">
+			</div>
 
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="intro active"><a href="index.html">Home</a></li>
-                                <li class='about'><a class='active' href="#about">About</a></li>
-                                <li class="portfolio"><a href='#portfolio'>Portfolio</a>
-                                    <ul class="dropdown">
-                                        <li><a href='/portfolio_architecture'>Featured</a></li>
-                                        <li><a href='/portfolio_environment'>Scene</a></li>
-                                        <li><a href='/portfolio_character'>Asset</a></li>
-                                    </ul>
-                                </li>
-								<li class='class'><a href="#class">Class</a>
-									<ul class="dropdown">
-										<li><a href='/portfolio_architecture'>기초 모델링</a></li>
-										<li><a href='/portfolio_environment'>심화 모델링</a></li>
-										<li><a href='/portfolio_character'>포트폴리오</a></li>
-									</ul>
-								</li>
+			<div class="col-lg-2">
+					<a href="https://open.kakao.com/o/sLjkGvXg" class="btn btn-accent btn-xlarge btn-rounded">상담하기</a>
+			</div>
+		</div>
+	</div>
+	</header>
+	<!-- Header End -->
 
-                                <li><a href='#subscribe'>Contact</a></li>
-                            </ul>
-
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-youtube"></i></a>
-
-
-
-                        </div>
-						
-					</div>
-				</div>
-
-
-				<div class="col-lg-2">
-
-						<a href="https://open.kakao.com/o/sLjkGvXg" class="btn btn-accent btn-xlarge btn-rounded">상담하기</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header End -->
-
+		
 	<div class="preloader"></div>
 	<section id="intro" class="scrollspy-section">
 		<div class="main-slider">
 			<div class="slider-item jarallax" data-speed="0.2">
 				<img src="images/UI/hero_1.webp" alt="banner" class="jarallax-img">
 				<div class="banner-content">
-					<img src="images/Envision_symbol.png" alt="banner" class="jarallax-img">
+					<img src="images/logo/Envision_symbol.png" alt="banner" class="jarallax-img">
 					<h2 class="banner-title txt-fx">Envision</h2>
 					<div class="btn-wrap">
 						<a href="#" class="btn-with-line">View Project</a>
@@ -227,7 +224,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<figure class="jarallax-keep-img">
-						<img src="images/ui/about.webp" alt="about us">
+						<img src="images/UI/about.webp" alt="about us">
 					</figure>
 				</div>
   
@@ -489,7 +486,7 @@
 
 					<div class="icon"><i class="bi bi-box"></i></div>
 				</div>
-				<h2 class="title"><a href="#" class="stretched-link">심화 모델링</a></h2>
+				<h2 class="title"><a href="class_advance.html" class="stretched-link">심화 모델링</a></h2>
 				<p>실제 게임 환경에 적용할 수 있는 모델링 기술을 배우는 과정입니다. 
 					복잡한 구조물과 디테일한 텍스처링 작업을 통해 실제 게임 배경에 필요한 고품질의 에셋을 제작할 수 있습니다.</p>
 				<p>수강 대상: 3D 작품을 제작한 경험이 있으신 분</p>
@@ -507,7 +504,7 @@
 
 					<div class="icon"><i class="bi bi-bank"></i></div>
 				</div>
-				<h2 class="title"><a href="#" class="stretched-link">포트폴리오 제작</a></h2>
+				<h2 class="title"><a href="class_portfolio.html" class="stretched-link">포트폴리오 제작</a></h2>
 				<p>배경 그래픽 전문가로서의 능력을 보여줄 수 있는 작품을 만듭니다. 
 					각자의 스타일과 강점을 살려 실무에서 통용될 수 있는 퀄리티와 완성도로 경쟁력 있는 포트폴리오를 완성합니다.</p>
 					<p>수강 대상: 프로그램 사용이 능숙하신 분</p>
@@ -558,7 +555,7 @@
 				</div>
 				<div class="col-md-6">
 					<div class="copyright text-right">
-						<img src="images/Envision_symbol.png" alt="banner" class="logo">
+						<img src="images/logo/Envision_symbol.png" alt="banner" class="logo">
 
 					</div>
 				</div>
@@ -569,7 +566,6 @@
 	
 	<!-- Scroll Top -->
 	<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
 
 
 	<script src="js/jquery-1.11.0.min.js"></script>
