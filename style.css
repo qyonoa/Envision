@@ -1411,7 +1411,7 @@ This is main CSS file that contains custom style rules used in this template
           transform: scale(1);
 }
 .header__nav__menu ul li:hover .dropdown {
-  top: 10px;
+  top: 35px;
   opacity: 1;
   visibility: visible;
 
