@@ -1121,6 +1121,7 @@ fieldset[disabled] a.btn {
 
 /* button with line */
 .btn-with-line {
+  font-size: 20px;
   color: #fff;
   position: relative;
 }
@@ -1374,11 +1375,11 @@ This is main CSS file that contains custom style rules used in this template
 }
 
 .header__logo {
-  padding: 20px 0;
+  padding: 25px 0;
 
 }
 .header__logo a {
-  width: 200px;
+  width: 150px;
   display: inline-block;
 }
 
@@ -2209,7 +2210,7 @@ body.nav-active .nav__block .nav__block-item {
   width: 50%;
   text-align: center;
   margin: 0 auto;
-  margin-top: 400px;
+  margin-top: 300px;
 }
 
 .main-slider .banner-content img {
@@ -2257,7 +2258,7 @@ body.nav-active .nav__block .nav__block-item {
   }
 
   .main-slider .banner-content {
-    margin-top: 400px;
+    margin-top: 300px;
   }
 }
 
@@ -2269,7 +2270,7 @@ body.nav-active .nav__block .nav__block-item {
 
 @media only screen and (max-width: 1199px) {
   .main-slider .banner-content {
-    margin-top: 350px;
+    margin-top: 250px;
   }
 
   .main-slider .banner-content h2.banner-title {
@@ -2279,7 +2280,7 @@ body.nav-active .nav__block .nav__block-item {
 
 @media only screen and (max-width: 999px) {
   .main-slider .banner-content {
-    margin-top: 300px;
+    margin-top: 200px;
   }
 
   .main-slider .banner-content h2.banner-title {
