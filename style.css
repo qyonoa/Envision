@@ -2837,6 +2837,12 @@ body.nav-active .nav__block .nav__block-item {
   margin-right: 60px;
 }
 
+.tool-icon {
+  height: 50px;
+  margin: 0 0 30px 10px;
+}
+
+
 
 
 .class-detail q {
