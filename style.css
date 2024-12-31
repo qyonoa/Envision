@@ -2839,12 +2839,12 @@ body.nav-active .nav__block .nav__block-item {
 
 
 
-.class-detail-block .class-details-inner q {
+.class-detail q {
   font-family: "playfair display";
   font-size: 1.25em;
   line-height: 2;
   display: block;
-  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 

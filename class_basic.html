@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="author" content="TemplatesJungle">
 	<meta name="keywords" content="Free HTML Template">
 	<meta name="description" content="Free HTML Template">
@@ -25,7 +25,6 @@
 		rel="stylesheet">
 	<link href="images/logo/favicon.png" rel="icon">
 	<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-
 	<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" type="text/css">
 
 
@@ -35,25 +34,25 @@
 </head>
 
 <body>
+
 	<div class="nav nav-overlay">
 		<div class="nav__content">
 			<div class="container">
 				<div class="row p-4 p-md-0 flex-column-reverse flex-md-row g-md-5 nav__block">
-					<div class="col-md-5">
+					<div class="col-md-8">
 						<ul class="nav__list d-none d-md-block">
 							<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a>
 							</li>
-							<li class="nav__list-item"><a href="index.html" class="hover-target">Onepage</a></li>
-							<li class="nav__list-item"><a href="index.html" class="hover-target">Styles</a></li>
-							<li class="nav__list-item"><a href="index.html" class="hover-target">Blog</a></li>
-							<li class="nav__list-item"><a href="single-post.html" class="hover-target">Single Post</a>
-							</li>
-							<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact us</a></li>
+							<li class="nav__list-item"><a href="index.html#about" class="hover-target">About</a></li>
+							<li class="nav__list-item"><a href="index.html#portfolio" class="hover-target">Artwork</a></li>
+							<li class="nav__list-item"><a href="index.html#class" class="hover-target">Class</a></li>
+							<li class="nav__list-item"><a href="https://open.kakao.com/o/sLjkGvXg" class="hover-target">Contact</a></li>
 						</ul>
 					</div>
+					
 					<div class="col-md-4 text-white">
-						<h3 class="text-white fw-bold nav__block-item">Contact info</h3>
-						<p class="text-light nav__block-item">Officia nisi corrupti eaque cumque exercitationem labore
+
+						<!-- <p class="text-light nav__block-item">Officia nisi corrupti eaque cumque exercitationem labore
 							sint sapiente rem neque temporibus id ratione perspiciatis, tenetur est repellendus
 							aspernatur culpa repudiandae omnis.</p>
 						<ul class="list-unstyled text-light nav__block-item">
@@ -70,119 +69,181 @@
 								<i class="icon icon-envelope-o me-2"></i><a href="#"
 									class="text-white">contact@example.com</a>
 							</li>
-						</ul>
+						</ul> -->
 					</div>
-					<div class="col-md-3 text-white">
-						<h3 class="text-white fw-bold nav__block-item">Pages</h3>
-						<ul class="list-unstyled nav__block-item">
-							<li><a href="index.html" class="text-white">Onepage </a></li>
-							<li><a href="index.html" class="text-white">Styles </a></li>
-							<li><a href="index.html" class="text-white">Blog </a></li>
-							<li><a href="index.html" class="text-white">Single Post </a></li>
-							<li><a href="index.html" class="text-white">Contact us </a></li>
-							<li><a href="index.html" class="text-white">Portfolio Masonry </a></li>
-							<li><a href="index.html" class="text-white">Portfolio Grid </a></li>
-							<li><a href="index.html" class="text-white">Portfolio Grid </a></li>
-							<li><a href="index.html" class="text-white">Portfolio Grid </a></li>
-							<li><a href="index.html" class="text-white">Single Portfolio </a></li>
-							<li><a href="index.html" class="text-white">About Us </a></li>
-							<li><a href="index.html" class="text-white">Our Team </a></li>
-						</ul>
-					</div>
+
 				</div>
 			</div>
 
 		</div>
 	</div>
-	
+
 	<div class="side-nav-bar">
 		<input id="menu-toggle" type="checkbox" />
 		<label class="menu-btn" for="menu-toggle">
 			<span></span>
 		</label>
 	</div>
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-				<div class="col-lg-2">
-					<div class="header__logo">
+	<!-- Header Section Begin -->
+	<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2">
+				<div class="header__logo">
 
-						<a href='index.html'><img src="images/logo/logo+symbol.webp" alt=""></a>
+					<a href='index.html'><img src="images/logo/logo+symbol.webp" alt=""></a>
+
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="header__nav__option">
+
+					<nav class="header__nav__menu mobile-menu">
+						<ul>
+							<li class="intro active"><a href="#intro">Home</a></li>
+							<li class='about'><a class='active' href="#about">About</a></li>
+							<li class="portfolio"><a href='#portfolio'>Portfolio</a>
+								<ul class="dropdown">
+									<li><a href='index.html#portfolio'>Featured</a></li>
+									<li><a href='index_scene.html#portfolio'>Scene</a></li>
+									<li><a href='index_asset.html#portfolio'>Asset</a></li>
+								</ul>
+							</li>
+							<li class='class'><a href="#class">Class</a>
+								<ul class="dropdown">
+									<li><a href='class_basic.html'>기초 모델링</a></li>
+									<li><a href='class_advance.html'>심화 모델링</a></li>
+									<li><a href='class_portfolio.html'>포트폴리오</a></li>
+								</ul>
+							</li>
+
+							<li><a href='#subscribe'>Contact</a></li>
+						</ul>
+
+					</nav>
+					<div class="header__nav__social">
+						<a href="#"><i class="bi bi-facebook"></i></a>
+						<a href="#"><i class="bi bi-instagram"></i></a>
+						<a href="#"><i class="bi bi-youtube"></i></a>
 
 					</div>
 				</div>
-                <div class="col-lg-8">
-                    <div class="header__nav__option">
+			</div>
 
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="intro active"><a href="index.html">Home</a></li>
-                                <li class='about'><a class='active' href="index.html#about">About</a></li>
-                                <li class="portfolio"><a href='index.html#portfolio'>Portfolio</a>
-                                    <ul class="dropdown">
-                                        <li><a href='index.html#portfolio'>Featured</a></li>
-                                        <li><a href='index_scene.html#portfolio'>Scene</a></li>
-                                        <li><a href='index_asset.html#portfolio'>Asset</a></li>
-                                    </ul>
-                                </li>
-								<li class='class'><a href="#class">Class</a>
-									<ul class="dropdown">
-										<li><a href='class_basic.html'>기초 모델링</a></li>
-										<li><a href='class_advance.html'>심화 모델링</a></li>
-										<li><a href='class_portfolio.html'>포트폴리오</a></li>
-									</ul>
-								</li>
-
-                                <li><a href='#subscribe'>Contact</a></li>
-                            </ul>
-
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-youtube"></i></a>
-                        </div>
-						
-					</div>
-				</div>
-
-
-				<div class="col-lg-2">
-
-						<a href="https://open.kakao.com/o/sLjkGvXg" class="btn btn-accent btn-xlarge btn-rounded">상담하기</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header End -->
+			<div class="col-lg-2">
+					<a href="https://open.kakao.com/o/sLjkGvXg" class="btn btn-accent btn-xlarge btn-rounded">상담하기</a>
+			</div>
+		</div>
+	</div>
+	</header>
+	<!-- Header End -->
 
 <body>
 
 	<div class="preloader"></div>
-
-
-	<section id="portfolio" class="scrollspy-section bg-dark padding-large">
+	<section id="class-detail" class="scrollspy-section padding-xlarge bg-dark">
 		<div class="container">
 
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-5">
+					<figure class="class-detail-image" data-speed="0.5">
+						<img src="images/ui/class_1.webp" alt="review" class="jarallax-img">
+					</figure>
 
-					<div class="section-header">
-						<div class="title">
-							<span>Envision Class</span>
+				</div>
+				<div class="col-lg-7">
+					<div class="col-md-12">
+						<div class="section-header">
+							<div class="title">
+								<span>초보자를 위한 모델링 입문 과정</span>
+							</div>
+							<h2 class="section-title light">기초 모델링</h2>
 						</div>
-						<h2 class="section-title light">기초 모델링</h2>
-						<h2 class="section-title light">페이지 준비중...</h2>
+					</div>
+
+					<div class="class-detail menu-item-02">
+						<q>3D 모델링의 기초를 배우며 창작의 재미를 느끼고, 빠르게 결과물을 완성해보는 과정</q>
+						<ul>
+							<li><i class="bi bi-check-circle"></i><span class="title">대상 : 3D 모델링을 처음 접하시는 분</span></li>	
+							<li><i class="bi bi-check-circle"></i><span class="title">기간 : 총 8주 (주 1회, 2시간)</span></li>	
+							<li><i class="bi bi-check-circle"></i><span class="title">인원 : 4명</span></li>	
+
+
+						</ul>
+					
+						<div class="btn-wrap">
+							<a href="index.html#portfolio" class="btn-with-line">View Artwork</a>
+						</div>
+						
 					</div>
 
 				</div>
 			</div>
+			<div class="row">
+				<div class="class-detail">
+					<h5>수업 내용</h5>
+				</div>
+					<div class="col-lg-4 class-detail">
+						<i class="bi bi-check-circle"></i><span class="title">3D 모델링 도구 익히기</span>				
+							<ul>
+								<li><span>모델링 툴의 인터페이스와 필수 단축키 학습</span></li>
+								<li><span>간단한 형태의 오브젝트 제작 실습</span></li>
+								<li><span>모델 제작의 전반적인 작업 흐름 파악</span></li>
+
+							</ul>
+						
+					</div>
+					<div class="col-lg-4 class-detail">
+
+												
+						<i class="bi bi-check-circle"></i><span class="title">창의적 오브젝트 제작</span>				
+							<ul>
+								<li><span>자신의 아이디어로 오브젝트 설정 후 레퍼런스 수집</span></li>
+								<li><span>비례와 구조 원리를 적용한 형태 제작</span></li>
+								<li><span>피드백을 바탕으로 디테일과 오류를 수정하고 개선</span></li>
+
+							</ul>
+							
+							
+						
+					</div>
+					<div class="col-lg-4 class-detail">					
+						<i class="bi bi-check-circle"></i><span class="title">간단한 렌더링 실습</span>				
+							<ul>
+								<li><span>기본적인 조명과 카메라 앵글 설정</span></li>
+								<li><span>실시간 렌더링 도구를 활용한 결과물 출력</span></li>
+								<li><span>완성된 결과물을 간단히 정리해 포트폴리오로 구성</span></li>
+							</ul>
+						
+						
+					</ul>
+						
+					</div>				
+			</div>
+			<!-- <div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-3" data-aos="fade-up">
+				<div class="col mb-4 portfolio-item construction interior">
+					<a href="images/portfolio-large-2.jpg" class="image-link"
+						title="Sample Caption goes here for Portfolio Item 1."><img src="images/class/advance/class_01.webp"
+							class="img-fluid" alt="portfolio"></a>
+				</div>
+				<div class="col mb-4 portfolio-item construction construction">
+					<a href="images/portfolio-large-2.jpg" class="image-link"
+						title="Sample Caption goes here for Portfolio Item 2."><img src="images/class/advance/class_02.webp"
+							class="img-fluid" alt="portfolio"></a>
+				</div>
+				<div class="col mb-4 portfolio-item construction">
+					<a href="images/portfolio-large-2.jpg" class="image-link"
+						title="Sample Caption goes here for Portfolio Item 3."><img src="images/class/advance/class_03.webp"
+							class="img-fluid" alt="portfolio"></a>
+				</div>
+				
+			</div> -->
 		</div>
 	</section>
 
 
-    <!-- Why Us Section -->
+
+    <!-- Class Section -->
     <section id="class" class="class section scrollspy-section bg-grey padding-large">
   
 		<div class="container">
@@ -207,7 +268,7 @@
 					<img src="images/ui/class_1.webp" alt="post" class="post-image">
 					<div class="icon"><i class="bi bi-bounding-box"></i></div>
 				</div>
-				<h2 class="title"><a href="class_advance.html" class="stretched-link">기초 모델링</a></h2>
+				<h2 class="title"><a href="class_basic.html" class="stretched-link">기초 모델링</a></h2>
 				<p>3D 그래픽을 처음 배우는 분들을 위한 입문 과정으로 실무에서 사용하는 소프트웨어의 사용법을 배우고
 					기본 기술을 익히며 창작의 재미를 느끼고 자신감을 쌓을 수 있습니다.</p>
 
@@ -256,6 +317,8 @@
   
 	</section><!-- /Why Us Section -->
 
+
+
 	<section id="subscribe" class="scrollspy-section bg-kakao padding-small">
 		<div class="container">
 			<div class="row">
@@ -281,6 +344,7 @@
 		</div>
 	</section>
 
+
 	<div id="footer-bottom" class="bg-dark">
 		<div class="container ">
 			<div class="row">
@@ -302,7 +366,6 @@
 	
 	<!-- Scroll Top -->
 	<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
 
 
 	<script src="js/jquery-1.11.0.min.js"></script>
