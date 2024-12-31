@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
-	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="author" content="TemplatesJungle">
 	<meta name="keywords" content="Free HTML Template">
 	<meta name="description" content="Free HTML Template">
@@ -25,7 +25,6 @@
 		rel="stylesheet">
 	<link href="images/logo/favicon.png" rel="icon">
 	<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-
 	<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" type="text/css">
 
 
@@ -35,25 +34,25 @@
 </head>
 
 <body>
+
 	<div class="nav nav-overlay">
 		<div class="nav__content">
 			<div class="container">
 				<div class="row p-4 p-md-0 flex-column-reverse flex-md-row g-md-5 nav__block">
-					<div class="col-md-5">
+					<div class="col-md-8">
 						<ul class="nav__list d-none d-md-block">
 							<li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a>
 							</li>
-							<li class="nav__list-item"><a href="index.html" class="hover-target">Onepage</a></li>
-							<li class="nav__list-item"><a href="index.html" class="hover-target">Styles</a></li>
-							<li class="nav__list-item"><a href="index.html" class="hover-target">Blog</a></li>
-							<li class="nav__list-item"><a href="single-post.html" class="hover-target">Single Post</a>
-							</li>
-							<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact us</a></li>
+							<li class="nav__list-item"><a href="index.html#about" class="hover-target">About</a></li>
+							<li class="nav__list-item"><a href="index.html#portfolio" class="hover-target">Artwork</a></li>
+							<li class="nav__list-item"><a href="index.html#class" class="hover-target">Class</a></li>
+							<li class="nav__list-item"><a href="https://open.kakao.com/o/sLjkGvXg" class="hover-target">Contact</a></li>
 						</ul>
 					</div>
+					
 					<div class="col-md-4 text-white">
-						<h3 class="text-white fw-bold nav__block-item">Contact info</h3>
-						<p class="text-light nav__block-item">Officia nisi corrupti eaque cumque exercitationem labore
+
+						<!-- <p class="text-light nav__block-item">Officia nisi corrupti eaque cumque exercitationem labore
 							sint sapiente rem neque temporibus id ratione perspiciatis, tenetur est repellendus
 							aspernatur culpa repudiandae omnis.</p>
 						<ul class="list-unstyled text-light nav__block-item">
@@ -70,95 +69,74 @@
 								<i class="icon icon-envelope-o me-2"></i><a href="#"
 									class="text-white">contact@example.com</a>
 							</li>
-						</ul>
+						</ul> -->
 					</div>
-					<div class="col-md-3 text-white">
-						<h3 class="text-white fw-bold nav__block-item">Pages</h3>
-						<ul class="list-unstyled nav__block-item">
-							<li><a href="index.html" class="text-white">Onepage </a></li>
-							<li><a href="index.html" class="text-white">Styles </a></li>
-							<li><a href="index.html" class="text-white">Blog </a></li>
-							<li><a href="index.html" class="text-white">Single Post </a></li>
-							<li><a href="index.html" class="text-white">Contact us </a></li>
-							<li><a href="index.html" class="text-white">Portfolio Masonry </a></li>
-							<li><a href="index.html" class="text-white">Portfolio Grid </a></li>
-							<li><a href="index.html" class="text-white">Portfolio Grid </a></li>
-							<li><a href="index.html" class="text-white">Portfolio Grid </a></li>
-							<li><a href="index.html" class="text-white">Single Portfolio </a></li>
-							<li><a href="index.html" class="text-white">About Us </a></li>
-							<li><a href="index.html" class="text-white">Our Team </a></li>
-						</ul>
-					</div>
+
 				</div>
 			</div>
 
 		</div>
 	</div>
-	
+
 	<div class="side-nav-bar">
 		<input id="menu-toggle" type="checkbox" />
 		<label class="menu-btn" for="menu-toggle">
 			<span></span>
 		</label>
 	</div>
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-				<div class="col-lg-2">
-					<div class="header__logo">
+	<!-- Header Section Begin -->
+	<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2">
+				<div class="header__logo">
 
-						<a href='index.html'><img src="images/logo/logo+symbol.webp" alt=""></a>
+					<a href='index.html'><img src="images/logo/logo+symbol.webp" alt=""></a>
+
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="header__nav__option">
+
+					<nav class="header__nav__menu mobile-menu">
+						<ul>
+							<li class="intro active"><a href="#intro">Home</a></li>
+							<li class='about'><a class='active' href="#about">About</a></li>
+							<li class="portfolio"><a href='#portfolio'>Portfolio</a>
+								<ul class="dropdown">
+									<li><a href='index.html#portfolio'>Featured</a></li>
+									<li><a href='index_scene.html#portfolio'>Scene</a></li>
+									<li><a href='index_asset.html#portfolio'>Asset</a></li>
+								</ul>
+							</li>
+							<li class='class'><a href="#class">Class</a>
+								<ul class="dropdown">
+									<li><a href='class_basic.html'>기초 모델링</a></li>
+									<li><a href='class_advance.html'>심화 모델링</a></li>
+									<li><a href='class_portfolio.html'>포트폴리오</a></li>
+								</ul>
+							</li>
+
+							<li><a href='#subscribe'>Contact</a></li>
+						</ul>
+
+					</nav>
+					<div class="header__nav__social">
+						<a href="#"><i class="bi bi-facebook"></i></a>
+						<a href="#"><i class="bi bi-instagram"></i></a>
+						<a href="#"><i class="bi bi-youtube"></i></a>
 
 					</div>
 				</div>
-                <div class="col-lg-8">
-                    <div class="header__nav__option">
+			</div>
 
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="intro active"><a href="index.html">Home</a></li>
-                                <li class='about'><a class='active' href="index.html#about">About</a></li>
-                                <li class="portfolio"><a href='index.html#portfolio'>Portfolio</a>
-                                    <ul class="dropdown">
-                                        <li><a href='index.html#portfolio'>Featured</a></li>
-                                        <li><a href='index_scene.html#portfolio'>Scene</a></li>
-                                        <li><a href='index_asset.html#portfolio'>Asset</a></li>
-                                    </ul>
-                                </li>
-								<li class='class'><a href="#class">Class</a>
-									<ul class="dropdown">
-										<li><a href='class_basic.html'>기초 모델링</a></li>
-										<li><a href='class_advance.html'>심화 모델링</a></li>
-										<li><a href='class_portfolio.html'>포트폴리오</a></li>
-									</ul>
-								</li>
-
-                                <li><a href='#subscribe'>Contact</a></li>
-                            </ul>
-
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-youtube"></i></a>
-
-
-
-                        </div>
-						
-					</div>
-				</div>
-
-
-				<div class="col-lg-2">
-
-						<a href="https://open.kakao.com/o/sLjkGvXg" class="btn btn-accent btn-xlarge btn-rounded">상담하기</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header End -->
+			<div class="col-lg-2">
+					<a href="https://open.kakao.com/o/sLjkGvXg" class="btn btn-accent btn-xlarge btn-rounded">상담하기</a>
+			</div>
+		</div>
+	</div>
+	</header>
+	<!-- Header End -->
 
 <body>
 
@@ -167,238 +145,106 @@
 		<div class="container">
 
 			<div class="row">
-
-				<div class="col-md-6">
-
+				<div class="col-lg-5">
 					<figure class="class-detail-image" data-speed="0.5">
 						<img src="images/ui/class_2.webp" alt="review" class="jarallax-img">
 					</figure>
 
 				</div>
-
-				<div class="col-md-6">
-
-					<div class="class-detail-block">
+				<div class="col-lg-7">
+					<div class="col-md-12">
 						<div class="section-header">
 							<div class="title">
 								<span>게임 산업을 겨냥한 실무형 모델링 과정</span>
 							</div>
 							<h2 class="section-title light">심화 모델링</h2>
 						</div>
-						<div class="class-details-inner">
-							<q>심화 모델링 과정은 업계에서 요구하는 고급 기술을 익히고, 차별화된 포트폴리오를 준비할 수 있는 실전형 수업입니다.
-								ZBrush, Substance Painter, Marmoset Toolbag 등의 전문 툴을 활용하며,
-								하이폴리 모델링부터 최적화된 로우폴리 에셋 제작, 텍스처링까지 전체 파이프라인을 경험할 수 있습니다.</q>
-							<div class="class-detail-author">
-								<div class="author-detail">
-									<div class="name">수강 대상</div>
-									<div class="author-title">3D 작품을 제작한 경험이 있으신 분</div>
-								</div>
-							</div>
-						</div>
-					</div><!--reviews-content-->
-
-				</div>
-			</div><!--grid-->
-		</div>
-		<div class="container">
-			<div class="row">
-
-				<div class="col-md-2">
-
-					<div class="footer-menu menu-item-01">
-						<img src="images/logo.png" alt="logo" class="footer-logo">
-						<p>Tristique lacus ullamcorper massa posuere nisl molestie. Nullam motes, tortor masa. Nisl
-							tellus etiam.</p>
-						<div class="social-links">
-							<ul>
-								<li>
-									<a href="#"><i class="icon icon-facebook"></i></a>
-									
-
-									
-								</li>
-								<li>
-									<a href="#"><i class="icon icon-twitter"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="icon icon-youtube-play"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="icon icon-behance-square"></i></a>
-								</li>
-							</ul>
-						</div>
 					</div>
 
-				</div>
-
-				<div class="col-md-4">
-
-					<div class="footer-menu menu-item-02">
-						<h5>과정 개요</h5>
-						<ul class="menu-list">
-							<li class="menu-item">
-								<a href="#">home</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">about us </a>
-							</li>
-							<li class="menu-item">
-								<a href="#">services</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">portfolios</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">blogs</a>
-							</li>
-							<li class="menu-item">
-								<a href="#">contact us</a>
-							</li>
-						</ul>
-					</div>
-
-				</div>
-		
-				<div class="col-md-6">
-
-					<div class="footer-menu">
-						<h5>수업 내용</h5>
+					<div class="class-detail menu-item-02">
 						<ul>
-						
-							<li><i class="bi bi-check-circle"></i><span class="title">ZBrush를 활용한 조각(Sculpting)</span>				
-								<ul>
-									<li><span>복잡하고 유기적인 디테일 표현</span></li>
-									<li><span>캐릭터 장식물 및 환경 소품의 세부 조형</span></li>
-									<li><span>멀티 레졸루션 모델링과 다이나믹 서브디비전 활용</span></li>
+							<li><i class="bi bi-check-circle"></i><span class="title">텍스처링과 베이킹 기술을 통해 최적화된 고품질 에셋 제작</span></li>			
+							<li><i class="bi bi-check-circle"></i><span class="title">대상 : 기초 모델링 경험이 있는 학습자 또는 실무 기술을 목표로 하는 분</span></li>	
+							<li><i class="bi bi-check-circle"></i><span class="title">기간 : 총 8주 (주 1회, 2시간)</span></li>	
+							<li><i class="bi bi-check-circle"></i><span class="title">인원 : 3명</span></li>	
 
-								</ul>
-							</li>
-													
-							<li><i class="bi bi-check-circle"></i><span class="title">로우폴리 모델과 베이킹 기술</span>				
-								<ul>
-									<li><span>하이폴리와 로우폴리 모델 간의 데이터 전환</span></li>
-									<li><span>Marmoset을 활용한 Normal Map 및 AO Map 베이킹</span></li>
-									<li><span>게임 엔진 최적화를 고려한 에셋 제작</span></li>
 
-								</ul>
-								
-								
-							</li>
-													
-							<li><i class="bi bi-check-circle"></i><span class="title">Substance Painter를 활용한 텍스처링</span>				
-								<ul>
-									<li><span>현실감 있는 PBR 텍스처 작업</span></li>
-									<li><span>다양한 재질(Material)과 텍스처 적용 기법</span></li>
-									<li><span>레이어 및 스마트 마스크를 활용한 효율적인 작업 방식</span></li>
-
-								</ul>
-							</li>
-							
 						</ul>
-					</div>
-				</div>
-				<div class="container footer-menu">
-
-					<div class="row">	
-							<h5>수업 내용</h5>
-							<div class="col-md-4">
-								<i class="bi bi-check-circle"></i><span class="title">ZBrush를 활용한 조각(Sculpting)</span>
-
-								<ul>
-									<li><span>복잡하고 유기적인 디테일 표현</span></li>
-									<li><span>캐릭터 장식물 및 환경 소품의 세부 조형</span></li>
-									<li><span>멀티 레졸루션 모델링과 다이나믹 서브디비전 활용</span></li>
-
-								</ul>
-							
-							</div>	
-							<div class="col-md-4">			
-								<i class="bi bi-check-circle"></i><span class="title">로우폴리 모델과 베이킹 기술</span>				
-								<ul>
-									<li><span>하이폴리와 로우폴리 모델 간의 데이터 전환</span></li>
-									<li><span>Marmoset을 활용한 Normal Map 및 AO Map 베이킹</span></li>
-									<li><span>게임 엔진 최적화를 고려한 에셋 제작</span></li>
-
-								</ul>
-								
-								
-							</div>
-							<div class="col-md-4">							
-								<i class="bi bi-check-circle"></i><span class="title">Substance Painter를 활용한 텍스처링</span>				
-								<ul>
-									<li><span>현실감 있는 PBR 텍스처 작업</span></li>
-									<li><span>다양한 재질(Material)과 텍스처 적용 기법</span></li>
-									<li><span>레이어 및 스마트 마스크를 활용한 효율적인 작업 방식</span></li>
-
-								</ul>
-							</div>
-						
-					</div>
-				</div>
-
-				과정 개요
-				대상: 기초 모델링 경험이 있는 학습자 또는 실무 기술을 목표로 하는 분
-				기간: 총 8주 (주 1회, 2시간)
-				목표:
-				업계 표준 툴과 워크플로우에 익숙해지기
-				하이폴리와 로우폴리 모델링의 차이점과 활용법 이해
-				텍스처링과 베이킹 기술을 통해 최적화된 고품질 에셋 제작
-				
-
+					
+						<a href="#">View Artwork</a>
+						<div class="btn-wrap">
+							<a href="#portfolio" class="btn-with-line">View Artwork</a>
+						</div>
 						
 					</div>
 
 				</div>
-
 			</div>
-		</div>
-	</section>
+			<div class="row">
+				<div class="class-detail">
+					<h5>수업 내용</h5>
+				</div>
+					<div class="col-lg-4 class-detail">
+						<i class="bi bi-check-circle"></i><span class="title">ZBrush를 활용한 조각(Sculpting)</span>				
+							<ul>
+								<li><span>복잡하고 유기적인 디테일 표현</span></li>
+								<li><span>석상 등 장식물 및 배경 소품의 세부 조형</span></li>
+								<li><span>멀티 레졸루션 모델링과 다이나믹 서브디비전 활용</span></li>
 
-	<section id="portfolio" class="scrollspy-section padding-small bg-dark">
+							</ul>
+						
+					</div>
+					<div class="col-lg-4 class-detail">
 
+												
+						<i class="bi bi-check-circle"></i><span class="title">로우폴리 모델과 베이킹 기술</span>				
+							<ul>
+								<li><span>하이폴리와 로우폴리 모델 간의 데이터 전환</span></li>
+								<li><span>Marmoset을 활용한 Normal Map 및 AO Map 베이킹</span></li>
+								<li><span>게임 엔진 최적화를 고려한 에셋 제작</span></li>
 
-
-		<div class="container">
-			<div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-3" data-aos="fade-up">
+							</ul>
+							
+							
+						
+					</div>
+					<div class="col-lg-4 class-detail">					
+						<i class="bi bi-check-circle"></i><span class="title">Substance Painter를 활용한 텍스처링</span>				
+							<ul>
+								<li><span>현실감 있는 PBR 텍스처 작업</span></li>
+								<li><span>다양한 재질(Material)과 텍스처 적용 기법</span></li>
+								<li><span>레이어 및 스마트 머티리얼을 활용한 효율적인 작업 방식</span></li>
+							</ul>
+						
+						
+					</ul>
+						
+					</div>				
+			</div>
+			<!-- <div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-3" data-aos="fade-up">
 				<div class="col mb-4 portfolio-item construction interior">
 					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 1."><img src="images/portfolio-thumb-1.jpg"
+						title="Sample Caption goes here for Portfolio Item 1."><img src="images/class/advance/class_01.webp"
 							class="img-fluid" alt="portfolio"></a>
 				</div>
 				<div class="col mb-4 portfolio-item construction construction">
 					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 2."><img src="images/portfolio-thumb-2.jpg"
+						title="Sample Caption goes here for Portfolio Item 2."><img src="images/class/advance/class_02.webp"
 							class="img-fluid" alt="portfolio"></a>
 				</div>
 				<div class="col mb-4 portfolio-item construction">
 					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 3."><img src="images/portfolio-thumb-11.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item construction">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 4."><img src="images/portfolio-thumb-4.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item interior">
-					<a href="images/portfolio-large-2.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 5."><img src="images/portfolio-thumb-5.jpg"
-							class="img-fluid" alt="portfolio"></a>
-				</div>
-				<div class="col mb-4 portfolio-item design">
-					<a href="images/portfolio-large-1.jpg" class="image-link"
-						title="Sample Caption goes here for Portfolio Item 6."><img src="images/portfolio-thumb-6.jpg"
+						title="Sample Caption goes here for Portfolio Item 3."><img src="images/class/advance/class_03.webp"
 							class="img-fluid" alt="portfolio"></a>
 				</div>
 				
-			</div>
-
+			</div> -->
 		</div>
 	</section>
 
-    <!-- Why Us Section -->
+
+
+    <!-- Class Section -->
     <section id="class" class="class section scrollspy-section bg-grey padding-large">
   
 		<div class="container">
@@ -441,7 +287,7 @@
 
 					<div class="icon"><i class="bi bi-box"></i></div>
 				</div>
-				<h2 class="title"><a href="#" class="stretched-link">심화 모델링</a></h2>
+				<h2 class="title"><a href="class_advance.html" class="stretched-link">심화 모델링</a></h2>
 				<p>실제 게임 환경에 적용할 수 있는 모델링 기술을 배우는 과정입니다. 
 					복잡한 구조물과 디테일한 텍스처링 작업을 통해 실제 게임 배경에 필요한 고품질의 에셋을 제작할 수 있습니다.</p>
 				<p>수강 대상: 3D 작품을 제작한 경험이 있으신 분</p>
@@ -472,6 +318,8 @@
   
 	</section><!-- /Why Us Section -->
 
+
+
 	<section id="subscribe" class="scrollspy-section bg-kakao padding-small">
 		<div class="container">
 			<div class="row">
@@ -497,6 +345,7 @@
 		</div>
 	</section>
 
+
 	<div id="footer-bottom" class="bg-dark">
 		<div class="container ">
 			<div class="row">
@@ -518,7 +367,6 @@
 	
 	<!-- Scroll Top -->
 	<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
 
 
 	<script src="js/jquery-1.11.0.min.js"></script>

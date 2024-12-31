@@ -1514,7 +1514,16 @@ This is main CSS file that contains custom style rules used in this template
 }
 
 @media screen and (max-width: 991px) {
-  .header {
+  .header__nav__option {
+    display: none;
+  }
+  .header a.btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .header__nav__social {
     display: none;
   }
 }
@@ -1827,6 +1836,7 @@ header.sticky #navbar ul.menu-list>li>a {
   margin-right: 30px;
   display: block;
   width: 150px;
+  height: 100px;
 }
 
 .side-nav-bar .menu-btn {
@@ -1857,7 +1867,7 @@ header.sticky #navbar ul.menu-list>li>a {
   display: block;
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #f6f6f6;
   transition-duration: .25s;
 }
@@ -1980,7 +1990,7 @@ header.sticky #navbar ul.menu-list>li>a {
 .nav__list-item a:after {
   position: absolute;
   content: '';
-  top: 50%;
+  top: 100%;
   margin-top: -2px;
   left: 50%;
   width: 0;
@@ -2719,111 +2729,6 @@ body.nav-active .nav__block .nav__block-item {
   bottom: 15px;
 }
 
-/*--------------------------------------------------------------
-/** 4.4 Footer
---------------------------------------------------------------*/
-footer#footer {
-  margin-top: 100px;
-}
-
-
-
-.footer-menu {
-  margin-top: 100px;
-  margin-right: 15px;
-}
-
-.footer-menu h5 {
-  color: white;
-  font-size: 2em;
-  margin-top: 0;
-  margin-bottom: 40px;
-  text-transform: capitalize;
-}
-
-.footer-menu span.title {
-  color: white;
-  font-size: 1.3em;
-  margin-top: 0;
-  text-transform: capitalize;
-}
-.footer-menu p {
-  line-height: 2;
-}
-
-.footer-menu i {
-  padding-right: 10px;
-  color: var(--accent-color);
-}
-
-.footer-menu .social-links ul {
-  display: flex;
-  list-style: none;
-}
-
-.footer-menu .social-links li {
-  margin-right: 30px;
-}
-
-.footer-menu .social-links a {
-  color: #757575;
-}
-
-.footer-menu .social-links a:hover {
-  color: #111;
-}
-
-.footer-menu .menu-list li.menu-item {
-  margin-bottom: 20px;
-}
-
-.footer-menu .menu-item {
-  display: flex;
-}
-
-.footer-menu .menu-item a {
-  text-transform: capitalize;
-  position: relative;
-  transition: 0.3s ease-out;
-  color: #757575;
-}
-
-.footer-menu .menu-item a:hover {
-  padding-left: 20px;
-  color: #111;
-}
-
-.footer-menu .menu-item a:hover:before {
-  content: "";
-  border-bottom: 2px solid var(--accent-color);
-  position: absolute;
-  top: 12px;
-  left: 3px;
-  width: 14px;
-  align-items: center;
-}
-
-/* Footer bottom */
-#footer-bottom {
-  border-top: 1px solid #efefef;
-  padding-top: 30px;
-  margin-top: 80px;
-}
-
-#footer-bottom img.logo {
-  width: 50px;
-
-}
-
-@media only screen and (max-width: 800px) {
-
-  #footer-bottom .copyright,
-  #footer-bottom .text-right {
-    text-align: center;
-  }
-}
-
-
 
 /*--------------------------------------------------------------
 # Class Section
@@ -2932,26 +2837,98 @@ footer#footer {
   margin-right: 60px;
 }
 
-.class-detail-block {
-  margin-top: 20px;
-}
+
 
 .class-detail-block .class-details-inner q {
   font-family: "playfair display";
   font-size: 1.25em;
   line-height: 2;
   display: block;
-  margin-bottom: 45px;
+  margin-top: 60px;
 }
 
-.class-detail-block .class-detail-author .name {
-  font-size: 1.4em;
-  font-weight: 900;
-}
 
-@media only screen and (max-width: 580px) {
-  img.review-image {
-    width: 100%;
+
+@media only screen and (max-width: 990px) {
+  .class-detail-image {
+    width: 50%;
     height: auto;
   }
 }
+
+
+
+.class-detail h5 {
+  color: white;
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+
+.class-detail span.title {
+  color: white;
+  font-size: 1.3em;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+.class-detail p {
+  color: white;
+
+}
+
+.class-detail i {
+  padding-right: 10px;
+  color: var(--accent-color);
+}
+
+.class-detail li {
+  padding-left: 25px;
+ 
+}
+
+
+.class-detail a {
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.3s ease-out;
+  color: #ffffff;
+}
+
+.class-detail a:hover {
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.class-detail a:hover:before {
+  content: "";
+  border-bottom: 2px solid var(--accent-color);
+  position: absolute;
+  top: 22px;
+  left: 3px;
+  width: 14px;
+  align-items: center;
+}
+
+
+/* Footer bottom */
+#footer-bottom {
+  border-top: 1px solid #efefef;
+  padding-top: 30px;
+  margin-top: 80px;
+}
+
+#footer-bottom img.logo {
+  width: 50px;
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  #footer-bottom .copyright,
+  #footer-bottom .text-right {
+    text-align: center;
+  }
+}
+
